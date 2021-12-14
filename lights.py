@@ -1,6 +1,14 @@
-from gpiozero import LED
+import gpiozero
 from time import sleep
-lights = LED(20)
-lights.on()
-sleep(5)
-lights.off()
+RELAY_PIN = 18
+
+# Triggered by the output pin going high: active_high=True
+# Initially off: initial_value=False
+
+relay = gpiozero.OutputDevice(RELAY_PIN, active_high=True, initial_value=False)
+
+relay.off() # switch off
+
+relay.on() # switch on
+
+print(relay.value) # see if on or off
