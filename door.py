@@ -1,7 +1,7 @@
 from gpiozero import Motor, LED
 from time import sleep
 
-door = Motor(forward=17, backward=18)
+door = Motor(forward=18, backward=17)
 # red = LED(19)
 # green = LED(20)
 
