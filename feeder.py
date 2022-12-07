@@ -33,7 +33,7 @@ def main():
     # GPIO.add_event_detect(17, GPIO.RISING, callback=button_callback)
     
     # Connect GPIO to [IN1 , IN2 , IN3 ,IN4] on Motor PCB
-    GpioPins = [19, 26, 21, 13]
+    GpioPins = [19, 13, 21, 20]
     
     # Arguments  for motor run function
     # (GPIOPins, stepdelay, steps, counterclockwise, verbose, steptype, initdelay)
